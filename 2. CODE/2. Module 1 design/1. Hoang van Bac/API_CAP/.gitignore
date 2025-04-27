@@ -1,0 +1,13 @@
+venv
+subdir/.env
+.env
+install_cmd.txt
+last_data_hash.txt
+
+Local_Data
+Get_Data
+dist
+build
+logs
+README
+README.md 

@@ -1,0 +1,9 @@
+venv
+.env
+dist
+build
+models
+data
+logs
+metrics
+predictions

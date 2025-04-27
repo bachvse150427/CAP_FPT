@@ -1,0 +1,13 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+PVE,logistic_regression,test,1.0,1.0,1.0,1.0
+PVE,logistic_regression,train,0.9901960784313726,0.9903846153846154,0.9901960784313726,0.9901951360184562
+PVE,logistic_regression,valid,1.0,1.0,1.0,1.0
+PVE,lstm,test,1.0,1.0,1.0,1.0
+PVE,lstm,train,1.0,1.0,1.0,1.0
+PVE,lstm,valid,1.0,1.0,1.0,1.0
+PVE,svm,test,1.0,1.0,1.0,1.0
+PVE,svm,train,0.9901960784313726,0.9903846153846154,0.9901960784313726,0.9901951360184562
+PVE,svm,valid,1.0,1.0,1.0,1.0
+PVE,transformer,test,1.0,1.0,1.0,1.0
+PVE,transformer,train,0.9901960784313726,0.9903846153846154,0.9901960784313726,0.9901951360184562
+PVE,transformer,valid,1.0,1.0,1.0,1.0

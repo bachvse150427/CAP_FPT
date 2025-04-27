@@ -1,0 +1,7 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+DNT,lstm,test,0.7241379310344828,0.5243757431629014,0.7241379310344828,0.6082758620689656
+DNT,lstm,train,1.0,1.0,1.0,1.0
+DNT,lstm,valid,1.0,1.0,1.0,1.0
+DNT,transformer,test,0.7241379310344828,0.5243757431629014,0.7241379310344828,0.6082758620689656
+DNT,transformer,train,1.0,1.0,1.0,1.0
+DNT,transformer,valid,1.0,1.0,1.0,1.0

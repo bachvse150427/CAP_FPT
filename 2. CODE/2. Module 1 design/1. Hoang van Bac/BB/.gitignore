@@ -3,7 +3,4 @@ venv
 dist
 build
 data
-models
-metrics
-predictions
 logs

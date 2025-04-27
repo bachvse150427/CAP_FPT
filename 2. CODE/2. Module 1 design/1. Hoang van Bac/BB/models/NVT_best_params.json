@@ -1,0 +1,21 @@
+{
+    "svm": null,
+    "logistic_regression": null,
+    "lstm": {
+        "hidden_size": 12,
+        "num_layers": 1,
+        "dropout": 0.5942625519140278,
+        "learning_rate": 0.0008690736232264285,
+        "batch_size": 8,
+        "weight_decay": 0.00036805805006386906
+    },
+    "transformer": {
+        "d_model": 21,
+        "num_layers": 2,
+        "dropout": 0.4241332677601072,
+        "learning_rate": 0.00015285199582224296,
+        "batch_size": 4,
+        "nhead": 2,
+        "weight_decay": 0.05172893724067879
+    }
+}

@@ -1,0 +1,13 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VFC,logistic_regression,test,0.0,0.0,0.0,0.0
+VFC,logistic_regression,train,0.9239130434782609,0.924113475177305,0.9239130434782609,0.9239040529363112
+VFC,logistic_regression,valid,1.0,1.0,1.0,1.0
+VFC,lstm,test,0.0,0.0,0.0,0.0
+VFC,lstm,train,0.5,0.25,0.5,0.3333333333333333
+VFC,lstm,valid,1.0,1.0,1.0,1.0
+VFC,svm,test,0.0,0.0,0.0,0.0
+VFC,svm,train,0.967391304347826,0.9693877551020408,0.967391304347826,0.9673565937315197
+VFC,svm,valid,1.0,1.0,1.0,1.0
+VFC,transformer,test,0.0,0.0,0.0,0.0
+VFC,transformer,train,0.9782608695652174,0.9791666666666667,0.9782608695652174,0.9782505910165484
+VFC,transformer,valid,1.0,1.0,1.0,1.0

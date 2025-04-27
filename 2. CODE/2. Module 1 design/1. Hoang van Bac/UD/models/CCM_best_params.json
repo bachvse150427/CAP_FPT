@@ -1,0 +1,35 @@
+{
+    "svm": {
+        "tol": 1.0,
+        "probability": true,
+        "kernel": "linear",
+        "gamma": 0.0001,
+        "class_weight": null,
+        "C": 10.0
+    },
+    "logistic_regression": {
+        "tol": 1.0,
+        "solver": "saga",
+        "random_state": 42,
+        "max_iter": 2000,
+        "class_weight": null,
+        "C": 0.001
+    },
+    "lstm": {
+        "hidden_size": 93,
+        "num_layers": 2,
+        "dropout": 0.4606495030767206,
+        "learning_rate": 0.0013418056946016984,
+        "batch_size": 16,
+        "weight_decay": 0.002439515432472186
+    },
+    "transformer": {
+        "d_model": 74,
+        "num_layers": 2,
+        "dropout": 0.2410901803752273,
+        "learning_rate": 0.0016339988068205288,
+        "batch_size": 32,
+        "nhead": 4,
+        "weight_decay": 0.000179091599074346
+    }
+}

@@ -1,0 +1,23 @@
+conda create  -p venv python==3.12
+
+conda activate E:\UD_2\MODEL_UD_ORIGIN\venv
+
+
+python setup.py install
+
+python main.py
+
+python main.py --skip-optimizer
+python main.py --skip-optimizer --skip-training
+python main.py --skip-optimizer --skip-training --skip-predictor
+
+python predictor.py
+
+python inferencer.py
+
+python inferencer.py --all
+
+
+python app.py
+http://localhost:8080/docs
+

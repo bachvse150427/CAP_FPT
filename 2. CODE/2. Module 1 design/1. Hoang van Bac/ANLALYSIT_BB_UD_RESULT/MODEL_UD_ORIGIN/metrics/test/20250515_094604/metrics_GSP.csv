@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+GSP,lstm,test,0.575,0.625,0.2631578947368421,0.37037037037037035
+GSP,svm,test,0.5,0.47619047619047616,0.5263157894736842,0.5
+GSP,transformer,test,0.525,0.0,0.0,0.0
+GSP,logistic_regression,test,0.525,0.0,0.0,0.0

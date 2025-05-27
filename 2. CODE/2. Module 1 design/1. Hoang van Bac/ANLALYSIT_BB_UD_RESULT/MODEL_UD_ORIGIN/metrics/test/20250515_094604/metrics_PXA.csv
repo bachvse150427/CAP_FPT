@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+PXA,lstm,test,0.625,0.625,1.0,0.7692307692307693
+PXA,svm,test,0.625,0.625,1.0,0.7692307692307693
+PXA,transformer,test,0.625,0.625,1.0,0.7692307692307693
+PXA,logistic_regression,test,0.625,0.625,1.0,0.7692307692307693

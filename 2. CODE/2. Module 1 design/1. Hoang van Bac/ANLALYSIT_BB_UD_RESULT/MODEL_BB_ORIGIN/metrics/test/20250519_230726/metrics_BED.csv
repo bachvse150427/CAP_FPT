@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+BED,logistic_regression,test,1.0,1.0,1.0,1.0
+BED,lstm,test,1.0,1.0,1.0,1.0
+BED,transformer,test,1.0,1.0,1.0,1.0
+BED,svm,test,1.0,1.0,1.0,1.0

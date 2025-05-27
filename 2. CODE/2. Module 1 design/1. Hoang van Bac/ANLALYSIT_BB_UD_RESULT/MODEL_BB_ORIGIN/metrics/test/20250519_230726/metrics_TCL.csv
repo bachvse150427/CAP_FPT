@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+TCL,logistic_regression,test,1.0,1.0,1.0,1.0
+TCL,lstm,test,1.0,1.0,1.0,1.0
+TCL,svm,test,0.0,0.0,0.0,0.0
+TCL,transformer,test,1.0,1.0,1.0,1.0

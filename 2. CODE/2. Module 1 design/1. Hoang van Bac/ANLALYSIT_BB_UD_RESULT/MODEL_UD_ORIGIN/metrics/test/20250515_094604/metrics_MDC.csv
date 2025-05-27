@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+MDC,lstm,test,0.35,0.0,0.0,0.0
+MDC,svm,test,0.65,0.65,1.0,0.7878787878787878
+MDC,transformer,test,0.35,0.0,0.0,0.0
+MDC,logistic_regression,test,0.6,0.6666666666666666,0.7692307692307693,0.7142857142857143

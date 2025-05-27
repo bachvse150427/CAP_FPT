@@ -1,0 +1,9 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+SHP,logistic_regression,train,0.8837209302325582,0.9056603773584906,0.8837209302325582,0.8821271929824562
+SHP,logistic_regression,valid,1.0,1.0,1.0,1.0
+SHP,lstm,train,1.0,1.0,1.0,1.0
+SHP,lstm,valid,1.0,1.0,1.0,1.0
+SHP,svm,train,0.9069767441860465,0.9215686274509803,0.9069767441860465,0.906164757228587
+SHP,svm,valid,1.0,1.0,1.0,1.0
+SHP,transformer,train,1.0,1.0,1.0,1.0
+SHP,transformer,valid,1.0,1.0,1.0,1.0

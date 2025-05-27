@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+SVI,logistic_regression,test,0.0,0.0,0.0,0.0
+SVI,lstm,test,0.0,0.0,0.0,0.0
+SVI,svm,test,0.0,0.0,0.0,0.0
+SVI,transformer,test,0.0,0.0,0.0,0.0

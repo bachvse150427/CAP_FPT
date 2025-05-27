@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+ADP,lstm,test,0.36363636363636365,0.0,0.0,0.0
+ADP,svm,test,0.6363636363636364,0.6363636363636364,1.0,0.7777777777777778
+ADP,transformer,test,0.36363636363636365,0.0,0.0,0.0
+ADP,logistic_regression,test,0.36363636363636365,0.0,0.0,0.0

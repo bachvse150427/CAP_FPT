@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+TKU,lstm,test,0.3409090909090909,0.0,0.0,0.0
+TKU,svm,test,0.5909090909090909,0.5909090909090909,1.0,0.7428571428571429
+TKU,transformer,test,0.4090909090909091,0.0,0.0,0.0
+TKU,logistic_regression,test,0.4090909090909091,0.0,0.0,0.0

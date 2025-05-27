@@ -1,0 +1,9 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+TET,logistic_regression,train,0.717948717948718,0.7232323232323232,0.717948717948718,0.7162698412698413
+TET,logistic_regression,valid,1.0,1.0,1.0,1.0
+TET,lstm,train,1.0,1.0,1.0,1.0
+TET,lstm,valid,1.0,1.0,1.0,1.0
+TET,svm,train,0.717948717948718,0.7232323232323232,0.717948717948718,0.7162698412698413
+TET,svm,valid,1.0,1.0,1.0,1.0
+TET,transformer,train,0.8589743589743589,0.89,0.8589743589743589,0.8561126949522053
+TET,transformer,valid,1.0,1.0,1.0,1.0

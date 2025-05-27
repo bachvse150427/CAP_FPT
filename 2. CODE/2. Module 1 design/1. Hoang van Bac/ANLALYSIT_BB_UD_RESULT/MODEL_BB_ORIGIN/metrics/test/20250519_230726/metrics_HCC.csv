@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+HCC,logistic_regression,test,1.0,1.0,1.0,1.0
+HCC,lstm,test,1.0,1.0,1.0,1.0
+HCC,transformer,test,1.0,1.0,1.0,1.0
+HCC,svm,test,0.7586206896551724,1.0,0.7586206896551724,0.8627450980392157

@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+GDW,lstm,test,0.45,0.5555555555555556,0.21739130434782608,0.3125
+GDW,svm,test,0.575,0.575,1.0,0.7301587301587301
+GDW,transformer,test,0.425,0.0,0.0,0.0
+GDW,logistic_regression,test,0.525,0.6,0.5217391304347826,0.5581395348837209

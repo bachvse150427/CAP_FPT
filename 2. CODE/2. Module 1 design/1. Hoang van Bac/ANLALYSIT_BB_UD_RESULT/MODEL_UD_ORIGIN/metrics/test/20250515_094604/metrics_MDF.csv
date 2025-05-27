@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+MDF,lstm,test,0.45,0.0,0.0,0.0
+MDF,svm,test,0.55,0.55,1.0,0.7096774193548387
+MDF,transformer,test,0.45,0.5,0.045454545454545456,0.08333333333333333
+MDF,logistic_regression,test,0.525,0.5789473684210527,0.5,0.5365853658536586

@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+CLC,lstm,test,0.375,0.0,0.0,0.0
+CLC,svm,test,0.6,0.6285714285714286,0.88,0.7333333333333333
+CLC,transformer,test,0.375,0.0,0.0,0.0
+CLC,logistic_regression,test,0.375,0.0,0.0,0.0

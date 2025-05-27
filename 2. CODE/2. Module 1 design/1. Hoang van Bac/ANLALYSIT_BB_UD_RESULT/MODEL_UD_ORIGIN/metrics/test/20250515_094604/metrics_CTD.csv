@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+CTD,lstm,test,0.45,0.0,0.0,0.0
+CTD,svm,test,0.55,0.55,1.0,0.7096774193548387
+CTD,transformer,test,0.45,0.5,0.045454545454545456,0.08333333333333333
+CTD,logistic_regression,test,0.475,0.5217391304347826,0.5454545454545454,0.5333333333333333

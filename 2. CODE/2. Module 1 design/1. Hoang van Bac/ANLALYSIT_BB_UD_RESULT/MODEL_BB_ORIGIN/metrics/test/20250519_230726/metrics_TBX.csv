@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+TBX,logistic_regression,test,0.0,0.0,0.0,0.0
+TBX,lstm,test,0.0,0.0,0.0,0.0
+TBX,svm,test,0.0,0.0,0.0,0.0
+TBX,transformer,test,0.0,0.0,0.0,0.0

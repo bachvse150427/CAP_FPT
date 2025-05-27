@@ -1,0 +1,9 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+TJC,logistic_regression,train,1.0,1.0,1.0,1.0
+TJC,logistic_regression,valid,1.0,1.0,1.0,1.0
+TJC,lstm,train,1.0,1.0,1.0,1.0
+TJC,lstm,valid,1.0,1.0,1.0,1.0
+TJC,svm,train,1.0,1.0,1.0,1.0
+TJC,svm,valid,1.0,1.0,1.0,1.0
+TJC,transformer,train,1.0,1.0,1.0,1.0
+TJC,transformer,valid,1.0,1.0,1.0,1.0

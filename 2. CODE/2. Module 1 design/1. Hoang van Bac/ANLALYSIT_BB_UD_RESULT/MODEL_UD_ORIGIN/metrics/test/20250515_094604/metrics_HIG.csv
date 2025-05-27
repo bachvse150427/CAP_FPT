@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+HIG,lstm,test,0.5,0.5769230769230769,0.625,0.6
+HIG,svm,test,0.6,0.6,1.0,0.75
+HIG,transformer,test,0.4,0.0,0.0,0.0
+HIG,logistic_regression,test,0.525,0.6923076923076923,0.375,0.4864864864864865

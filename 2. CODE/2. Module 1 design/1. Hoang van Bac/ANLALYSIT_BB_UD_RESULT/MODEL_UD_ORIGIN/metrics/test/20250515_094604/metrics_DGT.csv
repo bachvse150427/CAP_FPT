@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+DGT,lstm,test,0.5,0.5,1.0,0.6666666666666666
+DGT,svm,test,0.5,0.5,1.0,0.6666666666666666
+DGT,transformer,test,0.45,0.4444444444444444,0.4,0.42105263157894735
+DGT,logistic_regression,test,0.5,0.5,0.5,0.5

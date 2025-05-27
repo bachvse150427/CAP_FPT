@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+ALT,lstm,test,0.5227272727272727,0.6666666666666666,0.09090909090909091,0.16
+ALT,svm,test,0.5,0.5,1.0,0.6666666666666666
+ALT,transformer,test,0.5,0.0,0.0,0.0
+ALT,logistic_regression,test,0.5,0.0,0.0,0.0

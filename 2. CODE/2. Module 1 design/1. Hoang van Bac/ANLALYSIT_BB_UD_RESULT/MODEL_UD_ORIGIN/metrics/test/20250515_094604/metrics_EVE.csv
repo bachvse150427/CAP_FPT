@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+EVE,lstm,test,0.675,0.0,0.0,0.0
+EVE,svm,test,0.575,0.25,0.15384615384615385,0.19047619047619047
+EVE,transformer,test,0.675,0.0,0.0,0.0
+EVE,logistic_regression,test,0.65,0.0,0.0,0.0

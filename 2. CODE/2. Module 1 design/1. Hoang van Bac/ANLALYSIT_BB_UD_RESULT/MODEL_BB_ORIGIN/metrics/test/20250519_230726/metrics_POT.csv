@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+POT,logistic_regression,test,1.0,1.0,1.0,1.0
+POT,lstm,test,0.4827586206896552,1.0,0.4827586206896552,0.6511627906976745
+POT,svm,test,1.0,1.0,1.0,1.0
+POT,transformer,test,1.0,1.0,1.0,1.0

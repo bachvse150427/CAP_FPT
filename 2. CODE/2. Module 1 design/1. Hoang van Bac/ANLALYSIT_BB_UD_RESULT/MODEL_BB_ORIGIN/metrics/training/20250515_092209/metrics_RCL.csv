@@ -1,0 +1,9 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+RCL,logistic_regression,train,0.9791666666666666,0.98,0.9791666666666666,0.9791576204950064
+RCL,logistic_regression,valid,1.0,1.0,1.0,1.0
+RCL,lstm,train,0.96875,0.9705882352941176,0.96875,0.9687194525904204
+RCL,lstm,valid,1.0,1.0,1.0,1.0
+RCL,svm,train,1.0,1.0,1.0,1.0
+RCL,svm,valid,1.0,1.0,1.0,1.0
+RCL,transformer,train,1.0,1.0,1.0,1.0
+RCL,transformer,valid,1.0,1.0,1.0,1.0

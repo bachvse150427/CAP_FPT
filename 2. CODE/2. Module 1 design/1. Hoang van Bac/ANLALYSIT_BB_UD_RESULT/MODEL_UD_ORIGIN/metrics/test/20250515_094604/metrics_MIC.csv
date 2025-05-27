@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+MIC,lstm,test,0.5128205128205128,0.0,0.0,0.0
+MIC,svm,test,0.48717948717948717,0.48717948717948717,1.0,0.6551724137931034
+MIC,transformer,test,0.5128205128205128,0.0,0.0,0.0
+MIC,logistic_regression,test,0.5128205128205128,0.0,0.0,0.0

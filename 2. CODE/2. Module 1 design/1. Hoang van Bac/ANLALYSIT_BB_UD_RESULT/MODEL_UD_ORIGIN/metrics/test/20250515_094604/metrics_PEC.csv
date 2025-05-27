@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+PEC,lstm,test,0.925,0.925,1.0,0.961038961038961
+PEC,svm,test,0.925,0.925,1.0,0.961038961038961
+PEC,transformer,test,0.925,0.925,1.0,0.961038961038961
+PEC,logistic_regression,test,0.9,0.9459459459459459,0.9459459459459459,0.9459459459459459

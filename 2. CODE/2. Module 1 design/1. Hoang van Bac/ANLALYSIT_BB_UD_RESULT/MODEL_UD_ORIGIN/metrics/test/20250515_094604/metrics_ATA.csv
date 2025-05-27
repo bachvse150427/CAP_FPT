@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+ATA,lstm,test,0.675,0.675,1.0,0.8059701492537313
+ATA,svm,test,0.675,0.675,1.0,0.8059701492537313
+ATA,transformer,test,0.675,0.675,1.0,0.8059701492537313
+ATA,logistic_regression,test,0.675,0.675,1.0,0.8059701492537313

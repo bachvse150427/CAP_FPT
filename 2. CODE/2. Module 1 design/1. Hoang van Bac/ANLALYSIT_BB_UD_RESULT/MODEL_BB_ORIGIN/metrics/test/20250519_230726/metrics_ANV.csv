@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+ANV,logistic_regression,test,1.0,1.0,1.0,1.0
+ANV,lstm,test,1.0,1.0,1.0,1.0
+ANV,svm,test,0.0,0.0,0.0,0.0
+ANV,transformer,test,0.9655172413793104,1.0,0.9655172413793104,0.9824561403508771

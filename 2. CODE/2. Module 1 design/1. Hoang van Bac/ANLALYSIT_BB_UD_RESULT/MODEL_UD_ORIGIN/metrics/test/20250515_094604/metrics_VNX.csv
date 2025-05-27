@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VNX,lstm,test,0.8,0.8,1.0,0.8888888888888888
+VNX,svm,test,0.8,0.8,1.0,0.8888888888888888
+VNX,transformer,test,0.8,0.8,1.0,0.8888888888888888
+VNX,logistic_regression,test,0.2,0.0,0.0,0.0

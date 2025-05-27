@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+NAG,lstm,test,0.55,0.55,1.0,0.7096774193548387
+NAG,svm,test,0.55,0.55,1.0,0.7096774193548387
+NAG,transformer,test,0.55,0.55,1.0,0.7096774193548387
+NAG,logistic_regression,test,0.6,0.59375,0.8636363636363636,0.7037037037037037

@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+PAC,lstm,test,0.65,0.0,0.0,0.0
+PAC,svm,test,0.575,0.4,0.42857142857142855,0.41379310344827586
+PAC,transformer,test,0.625,0.0,0.0,0.0
+PAC,logistic_regression,test,0.425,0.2631578947368421,0.35714285714285715,0.30303030303030304

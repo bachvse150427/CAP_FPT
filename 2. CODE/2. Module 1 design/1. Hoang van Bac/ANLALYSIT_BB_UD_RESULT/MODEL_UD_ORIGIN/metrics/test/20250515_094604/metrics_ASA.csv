@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+ASA,lstm,test,0.975,0.975,1.0,0.9873417721518988
+ASA,svm,test,0.6,1.0,0.5897435897435898,0.7419354838709677
+ASA,transformer,test,0.975,0.975,1.0,0.9873417721518988
+ASA,logistic_regression,test,0.975,0.975,1.0,0.9873417721518988

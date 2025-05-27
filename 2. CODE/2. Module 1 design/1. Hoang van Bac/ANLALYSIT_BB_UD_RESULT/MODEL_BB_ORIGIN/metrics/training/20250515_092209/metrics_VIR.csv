@@ -1,0 +1,9 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VIR,logistic_regression,train,1.0,1.0,1.0,1.0
+VIR,logistic_regression,valid,1.0,1.0,1.0,1.0
+VIR,lstm,train,1.0,1.0,1.0,1.0
+VIR,lstm,valid,1.0,1.0,1.0,1.0
+VIR,svm,train,1.0,1.0,1.0,1.0
+VIR,svm,valid,1.0,1.0,1.0,1.0
+VIR,transformer,train,1.0,1.0,1.0,1.0
+VIR,transformer,valid,1.0,1.0,1.0,1.0

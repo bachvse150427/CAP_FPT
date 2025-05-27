@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+BRC,logistic_regression,test,0.0,0.0,0.0,0.0
+BRC,lstm,test,0.0,0.0,0.0,0.0
+BRC,svm,test,0.0,0.0,0.0,0.0
+BRC,transformer,test,0.0,0.0,0.0,0.0

@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+BTP,lstm,test,0.45,0.0,0.0,0.0
+BTP,svm,test,0.575,0.6190476190476191,0.5909090909090909,0.6046511627906976
+BTP,transformer,test,0.45,0.0,0.0,0.0
+BTP,logistic_regression,test,0.45,0.5,0.045454545454545456,0.08333333333333333

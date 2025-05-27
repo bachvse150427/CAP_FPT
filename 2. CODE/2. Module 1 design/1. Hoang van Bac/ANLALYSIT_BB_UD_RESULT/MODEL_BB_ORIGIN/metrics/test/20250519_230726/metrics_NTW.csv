@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+NTW,logistic_regression,test,1.0,1.0,1.0,1.0
+NTW,lstm,test,1.0,1.0,1.0,1.0
+NTW,svm,test,1.0,1.0,1.0,1.0
+NTW,transformer,test,1.0,1.0,1.0,1.0

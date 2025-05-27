@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VCA,logistic_regression,test,1.0,1.0,1.0,1.0
+VCA,lstm,test,1.0,1.0,1.0,1.0
+VCA,svm,test,0.0,0.0,0.0,0.0
+VCA,transformer,test,1.0,1.0,1.0,1.0

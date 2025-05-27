@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+HPP,lstm,test,0.475,0.0,0.0,0.0
+HPP,svm,test,0.525,0.525,1.0,0.6885245901639344
+HPP,transformer,test,0.475,0.0,0.0,0.0
+HPP,logistic_regression,test,0.475,0.0,0.0,0.0

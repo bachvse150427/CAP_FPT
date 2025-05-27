@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+HPB,lstm,test,0.75,0.9090909090909091,0.8108108108108109,0.8571428571428571
+HPB,svm,test,0.925,0.925,1.0,0.961038961038961
+HPB,transformer,test,0.1,1.0,0.02702702702702703,0.05263157894736842
+HPB,logistic_regression,test,0.075,0.0,0.0,0.0

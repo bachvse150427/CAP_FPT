@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+MKV,lstm,test,0.625,0.6285714285714286,0.9166666666666666,0.7457627118644068
+MKV,svm,test,0.4,0.5,0.5,0.5
+MKV,transformer,test,0.6,0.6,1.0,0.75
+MKV,logistic_regression,test,0.475,0.5428571428571428,0.7916666666666666,0.6440677966101694

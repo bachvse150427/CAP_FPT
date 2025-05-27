@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+CAD,lstm,test,0.8,0.8,1.0,0.8888888888888888
+CAD,svm,test,0.8,0.8,1.0,0.8888888888888888
+CAD,transformer,test,0.775,0.8108108108108109,0.9375,0.8695652173913043
+CAD,logistic_regression,test,0.35,0.8,0.25,0.38095238095238093

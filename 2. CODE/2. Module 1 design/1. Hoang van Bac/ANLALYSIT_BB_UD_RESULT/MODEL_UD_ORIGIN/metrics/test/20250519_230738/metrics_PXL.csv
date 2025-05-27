@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+PXL,lstm,test,0.5454545454545454,0.0,0.0,0.0
+PXL,svm,test,0.45454545454545453,0.45454545454545453,1.0,0.625
+PXL,transformer,test,0.5454545454545454,0.0,0.0,0.0
+PXL,logistic_regression,test,0.4090909090909091,0.3125,0.25,0.2777777777777778

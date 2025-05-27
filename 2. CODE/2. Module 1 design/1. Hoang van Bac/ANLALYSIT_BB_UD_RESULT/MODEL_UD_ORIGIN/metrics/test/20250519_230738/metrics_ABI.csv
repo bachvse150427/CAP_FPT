@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+ABI,lstm,test,0.5227272727272727,0.0,0.0,0.0
+ABI,svm,test,0.4772727272727273,0.4772727272727273,1.0,0.6461538461538462
+ABI,transformer,test,0.5227272727272727,0.0,0.0,0.0
+ABI,logistic_regression,test,0.5227272727272727,0.0,0.0,0.0

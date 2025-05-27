@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+GTT,lstm,test,0.975,0.975,1.0,0.9873417721518988
+GTT,svm,test,0.975,0.975,1.0,0.9873417721518988
+GTT,transformer,test,0.975,0.975,1.0,0.9873417721518988
+GTT,logistic_regression,test,0.075,1.0,0.05128205128205128,0.0975609756097561

@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+GTA,logistic_regression,test,1.0,1.0,1.0,1.0
+GTA,lstm,test,1.0,1.0,1.0,1.0
+GTA,svm,test,1.0,1.0,1.0,1.0
+GTA,transformer,test,1.0,1.0,1.0,1.0

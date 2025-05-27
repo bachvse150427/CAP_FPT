@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VIX,lstm,test,0.5,0.0,0.0,0.0
+VIX,svm,test,0.5,0.5,1.0,0.6666666666666666
+VIX,transformer,test,0.5,0.0,0.0,0.0
+VIX,logistic_regression,test,0.525,0.5384615384615384,0.35,0.42424242424242425

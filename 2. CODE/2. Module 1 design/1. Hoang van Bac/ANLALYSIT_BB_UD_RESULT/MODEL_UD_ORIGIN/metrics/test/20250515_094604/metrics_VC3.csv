@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VC3,lstm,test,0.525,0.0,0.0,0.0
+VC3,svm,test,0.525,0.0,0.0,0.0
+VC3,transformer,test,0.525,0.0,0.0,0.0
+VC3,logistic_regression,test,0.525,0.0,0.0,0.0

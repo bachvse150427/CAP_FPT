@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+ITQ,lstm,test,0.5,0.5,1.0,0.6666666666666666
+ITQ,svm,test,0.5,0.5,1.0,0.6666666666666666
+ITQ,transformer,test,0.5,0.5,1.0,0.6666666666666666
+ITQ,logistic_regression,test,0.5,0.5,1.0,0.6666666666666666

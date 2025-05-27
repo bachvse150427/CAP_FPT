@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+SHC,lstm,test,0.525,0.0,0.0,0.0
+SHC,svm,test,0.475,0.475,1.0,0.6440677966101694
+SHC,transformer,test,0.525,0.0,0.0,0.0
+SHC,logistic_regression,test,0.525,0.5,0.2631578947368421,0.3448275862068966

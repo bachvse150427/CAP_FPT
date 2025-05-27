@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+LHC,logistic_regression,test,0.9655172413793104,1.0,0.9655172413793104,0.9824561403508771
+LHC,lstm,test,1.0,1.0,1.0,1.0
+LHC,svm,test,1.0,1.0,1.0,1.0
+LHC,transformer,test,1.0,1.0,1.0,1.0

@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+SDV,lstm,test,0.4,0.0,0.0,0.0
+SDV,svm,test,0.6,0.6,1.0,0.75
+SDV,transformer,test,0.4,0.0,0.0,0.0
+SDV,logistic_regression,test,0.4,0.5,0.5833333333333334,0.5384615384615384

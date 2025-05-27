@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+EID,lstm,test,0.45454545454545453,0.0,0.0,0.0
+EID,svm,test,0.5454545454545454,0.5454545454545454,1.0,0.7058823529411765
+EID,transformer,test,0.45454545454545453,0.0,0.0,0.0
+EID,logistic_regression,test,0.45454545454545453,0.0,0.0,0.0

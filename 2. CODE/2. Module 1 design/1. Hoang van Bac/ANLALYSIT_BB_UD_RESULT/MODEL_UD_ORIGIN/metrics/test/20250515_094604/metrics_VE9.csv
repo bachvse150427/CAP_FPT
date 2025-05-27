@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VE9,lstm,test,0.625,0.6153846153846154,1.0,0.7619047619047619
+VE9,svm,test,0.6,0.6,1.0,0.75
+VE9,transformer,test,0.65,0.631578947368421,1.0,0.7741935483870968
+VE9,logistic_regression,test,0.6,0.6,1.0,0.75

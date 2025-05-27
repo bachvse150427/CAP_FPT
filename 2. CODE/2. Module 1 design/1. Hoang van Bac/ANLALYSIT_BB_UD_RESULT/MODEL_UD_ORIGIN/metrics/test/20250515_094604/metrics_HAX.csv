@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+HAX,lstm,test,0.475,0.0,0.0,0.0
+HAX,svm,test,0.525,0.525,1.0,0.6885245901639344
+HAX,transformer,test,0.525,0.525,1.0,0.6885245901639344
+HAX,logistic_regression,test,0.475,0.5,0.7619047619047619,0.6037735849056604

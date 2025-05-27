@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+SBS,lstm,test,0.525,0.0,0.0,0.0
+SBS,svm,test,0.4,0.2727272727272727,0.15789473684210525,0.2
+SBS,transformer,test,0.525,0.0,0.0,0.0
+SBS,logistic_regression,test,0.525,0.5,0.10526315789473684,0.17391304347826086

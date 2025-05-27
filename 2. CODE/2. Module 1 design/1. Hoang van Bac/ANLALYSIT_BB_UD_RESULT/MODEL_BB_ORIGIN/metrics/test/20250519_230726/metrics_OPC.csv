@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+OPC,logistic_regression,test,0.0,0.0,0.0,0.0
+OPC,lstm,test,0.0,0.0,0.0,0.0
+OPC,svm,test,0.6206896551724138,1.0,0.6206896551724138,0.7659574468085106
+OPC,transformer,test,0.06896551724137931,1.0,0.06896551724137931,0.12903225806451613

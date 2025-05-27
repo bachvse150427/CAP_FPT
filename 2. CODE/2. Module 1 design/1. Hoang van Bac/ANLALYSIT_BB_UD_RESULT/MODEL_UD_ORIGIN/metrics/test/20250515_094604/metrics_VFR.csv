@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VFR,lstm,test,0.575,0.8333333333333334,0.23809523809523808,0.37037037037037035
+VFR,svm,test,0.525,0.525,1.0,0.6885245901639344
+VFR,transformer,test,0.525,0.525,1.0,0.6885245901639344
+VFR,logistic_regression,test,0.475,0.0,0.0,0.0

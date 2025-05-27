@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+TPP,logistic_regression,test,0.7586206896551724,1.0,0.7586206896551724,0.8627450980392157
+TPP,lstm,test,0.0,0.0,0.0,0.0
+TPP,svm,test,0.0,0.0,0.0,0.0
+TPP,transformer,test,0.896551724137931,1.0,0.896551724137931,0.9454545454545454

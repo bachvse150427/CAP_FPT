@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+TNB,lstm,test,0.625,0.625,1.0,0.7692307692307693
+TNB,svm,test,0.625,0.625,1.0,0.7692307692307693
+TNB,transformer,test,0.75,0.7419354838709677,0.92,0.8214285714285714
+TNB,logistic_regression,test,0.6,0.6451612903225806,0.8,0.7142857142857143

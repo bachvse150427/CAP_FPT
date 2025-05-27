@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+DNT,lstm,test,0.75,0.75,1.0,0.8571428571428571
+DNT,svm,test,0.75,0.75,1.0,0.8571428571428571
+DNT,transformer,test,0.75,0.75,1.0,0.8571428571428571
+DNT,logistic_regression,test,0.675,0.7297297297297297,0.9,0.8059701492537313

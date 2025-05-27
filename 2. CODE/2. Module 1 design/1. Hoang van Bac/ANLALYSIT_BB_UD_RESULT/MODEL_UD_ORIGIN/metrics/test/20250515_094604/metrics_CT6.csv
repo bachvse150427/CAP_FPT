@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+CT6,lstm,test,0.4,0.0,0.0,0.0
+CT6,svm,test,0.425,0.5555555555555556,0.20833333333333334,0.30303030303030304
+CT6,transformer,test,0.4,0.0,0.0,0.0
+CT6,logistic_regression,test,0.4,0.5,0.16666666666666666,0.25

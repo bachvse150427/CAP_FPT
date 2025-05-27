@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+HNM,lstm,test,0.425,0.0,0.0,0.0
+HNM,svm,test,0.575,0.6,0.782608695652174,0.6792452830188679
+HNM,transformer,test,0.45,1.0,0.043478260869565216,0.08333333333333333
+HNM,logistic_regression,test,0.425,0.0,0.0,0.0

@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VNA,logistic_regression,test,0.0,0.0,0.0,0.0
+VNA,lstm,test,0.0,0.0,0.0,0.0
+VNA,svm,test,0.0,0.0,0.0,0.0
+VNA,transformer,test,0.0,0.0,0.0,0.0

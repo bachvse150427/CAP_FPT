@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+WTC,logistic_regression,test,0.0,0.0,0.0,0.0
+WTC,lstm,test,0.0,0.0,0.0,0.0
+WTC,svm,test,0.0,0.0,0.0,0.0
+WTC,transformer,test,0.0,0.0,0.0,0.0

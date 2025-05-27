@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VID,logistic_regression,test,0.3448275862068966,1.0,0.3448275862068966,0.5128205128205128
+VID,lstm,test,0.0,0.0,0.0,0.0
+VID,svm,test,0.0,0.0,0.0,0.0
+VID,transformer,test,0.3793103448275862,1.0,0.3793103448275862,0.55

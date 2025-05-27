@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+TTF,logistic_regression,test,0.6551724137931034,1.0,0.6551724137931034,0.7916666666666666
+TTF,lstm,test,0.0,0.0,0.0,0.0
+TTF,svm,test,0.0,0.0,0.0,0.0
+TTF,transformer,test,0.13793103448275862,1.0,0.13793103448275862,0.24242424242424243

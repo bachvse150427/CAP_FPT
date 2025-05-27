@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction Dashboard</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- DataTables -->
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --success-color: #4cc9f0;
+            --warning-color: #f72585;
+            --info-color: #4895ef;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7ff;
+            color: #333;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        
+        .navbar-brand {
+            font-weight: 600;
+            color: white;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-header {
+            background-color: white;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            font-weight: 600;
+            padding: 15px 20px;
+        }
+        
+        .stats-card {
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .stats-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .stats-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .stats-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+        
+        .error-message {
+            color: var(--warning-color);
+            margin: 15px 0;
+            display: none;
+            border-radius: 8px;
+        }
+        
+        .file-info {
+            font-size: 12px;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+        
+        .form-select, .form-control {
+            border-radius: 8px;
+            padding: 10px 15px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .form-select:focus, .form-control:focus {
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.25);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .table {
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        
+        .table thead th {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+            font-weight: 600;
+            color: #495057;
+        }
+        
+        .table tbody tr:hover {
+            background-color: rgba(67, 97, 238, 0.05);
+        }
+        
+        .prediction-up {
+            color: #10b981;
+            font-weight: 600;
+        }
+        
+        .prediction-down {
+            color: #ef4444;
+            font-weight: 600;
+        }
+        
+        .chart-container {
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        
+        .filter-label {
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #495057;
+        }
+        
+        .dashboard-title {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .dashboard-subtitle {
+            color: #6c757d;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-chart-line me-2"></i>
+                Stock Prediction Dashboard
+            </a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- Header -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="dashboard-title">Stock Market Prediction Analysis</h1>
+                <p class="dashboard-subtitle">Analyze and visualize stock predictions using advanced machine learning models</p>
+            </div>
+        </div>
+        
+        <!-- Error message -->
+        <div id="errorMessage" class="alert alert-danger error-message"></div>
+
+        <!-- Filters -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-filter me-2"></i> Filters
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="dataTypeSelect" class="filter-label">
+                            <i class="fas fa-globe me-1"></i> Market State
+                        </label>
+                        <select class="form-select" id="dataTypeSelect" onchange="loadFilters()">
+                            <option value="BB" selected>BB</option>
+                            <option value="UD">UD</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="tickerSelect" class="filter-label">
+                            <i class="fas fa-tag me-1"></i> Ticker
+                        </label>
+                        <select class="form-select" id="tickerSelect">
+                            <option value="">Select...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="dateSelect" class="filter-label">
+                            <i class="far fa-calendar-alt me-1"></i> Date
+                        </label>
+                        <select class="form-select" id="dateSelect">
+                            <option value="">Select...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <button class="btn btn-primary" onclick="fetchPrediction()">
+                            <i class="fas fa-search me-1"></i> Get Prediction
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div id="fileInfo" class="file-info"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="row mb-4" id="statsSection" style="display: none;">
+            <div class="col-md-4 mb-4">
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="stats-value" id="totalPredictions">0</div>
+                    <div class="stats-label">Total Predictions</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="stats-value" id="averageF1Score">0%</div>
+                    <div class="stats-label">Average F1 Score</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="stats-value" id="upPredictionPercentage">0%</div>
+                    <div class="stats-label">Up Predictions</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div class="row mb-4" id="chartsSection" style="display: none;">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-line me-2"></i> Prediction Trend
+                    </div>
+                    <div class="card-body">
+                        <div id="predictionTrendChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-pie me-2"></i> Prediction Distribution
+                    </div>
+                    <div class="card-body">
+                        <div id="predictionDistributionChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading indicator -->
+        <div id="loading" class="loading">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Loading data...</p>
+        </div>
+
+        <!-- Results Table -->
+        <div class="card" id="resultsCard" style="display: none;">
+            <div class="card-header">
+                <i class="fas fa-table me-2"></i> Prediction Results
+            </div>
+            <div class="card-body">
+                <table id="resultTable" class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Ticker</th>
+                            <th>Model</th>
+                            <th>Date</th>
+                            <th>Prediction</th>
+                            <th>Confidence</th>
+                            <th>F1 Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-muted py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2025 Stock Prediction Dashboard</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <!-- ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script>
+        let dataTable;
+        let predictionTrendChart;
+        let predictionDistributionChart;
+        let chartData = [];
+
+        $(document).ready(function() {
+            dataTable = $('#resultTable').DataTable({
+                pageLength: 10,
+                order: [[2, 'desc']], // Sort by Date column by default
+                responsive: true,
+                language: {
+                    search: "<i class='fas fa-search'></i>",
+                    searchPlaceholder: "Search records",
+                    paginate: {
+                        next: '<i class="fas fa-chevron-right"></i>',
+                        previous: '<i class="fas fa-chevron-left"></i>'
+                    }
+                }
+            });
+            
+            initCharts();
+            loadFilters();
+        });
+
+        function initCharts() {
+            // Prediction Trend Chart
+            const trendOptions = {
+                series: [{
+                    name: 'Prediction',
+                    data: []
+                }, {
+                    name: 'Confidence',
+                    data: []
+                }],
+                chart: {
+                    height: 300,
+                    type: 'line',
+                    toolbar: {
+                        show: false
+                    },
+                    zoom: {
+                        enabled: false
+                    }
+                },
+                colors: ['#4361ee', '#4cc9f0'],
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    curve: 'smooth',
+                    width: 3
+                },
+                grid: {
+                    borderColor: '#e0e0e0',
+                    row: {
+                        colors: ['#f5f7ff', 'transparent'],
+                        opacity: 0.5
+                    }
+                },
+                markers: {
+                    size: 5
+                },
+                xaxis: {
+                    categories: [],
+                    title: {
+                        text: 'Date'
+                    }
+                },
+                yaxis: {
+                    title: {
+                        text: 'Value'
+                    }
+                },
+                tooltip: {
+                    shared: true,
+                    intersect: false
+                },
+                legend: {
+                    position: 'top'
+                }
+            };
+
+            predictionTrendChart = new ApexCharts(document.querySelector("#predictionTrendChart"), trendOptions);
+            predictionTrendChart.render();
+
+            // Prediction Distribution Chart
+            const distributionOptions = {
+                series: [0, 0],
+                chart: {
+                    height: 300,
+                    type: 'donut',
+                },
+                labels: ['Up (1)', 'Down (0)'],
+                colors: ['#10b981', '#ef4444'],
+                legend: {
+                    position: 'bottom'
+                },
+                dataLabels: {
+                    enabled: true,
+                    formatter: function (val) {
+                        return val.toFixed(1) + "%";
+                    }
+                },
+                plotOptions: {
+                    pie: {
+                        donut: {
+                            size: '50%',
+                            labels: {
+                                show: true,
+                                total: {
+                                    show: true,
+                                    label: 'Total',
+                                    formatter: function (w) {
+                                        return w.globals.seriesTotals.reduce((a, b) => a + b, 0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            predictionDistributionChart = new ApexCharts(document.querySelector("#predictionDistributionChart"), distributionOptions);
+            predictionDistributionChart.render();
+        }
+
+        async function loadFilters() {
+            try {
+                const dataType = document.getElementById('dataTypeSelect').value;
+                document.getElementById('loading').style.display = 'block';
+                
+                const response = await fetch(`/available-filters?data_type=${dataType}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                // Hiển thị thông tin file CSV
+                if (data.file_used) {
+                    document.getElementById('fileInfo').textContent = `Dữ liệu đang sử dụng: ${data.file_used}`;
+                }
+                
+                populateSelect('tickerSelect', data.tickers);
+                populateSelect('dateSelect', data.dates);
+            } catch (error) {
+                console.error('Error loading filters:', error);
+                showError('Error loading filters. Please try again.');
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+
+        function populateSelect(elementId, options) {
+            const select = document.getElementById(elementId);
+            select.innerHTML = '<option value="">Select...</option>';
+            options.forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option;
+                optionElement.textContent = option;
+                select.appendChild(optionElement);
+            });
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        async function fetchPrediction() {
+            const dataType = document.getElementById('dataTypeSelect').value;
+            const ticker = document.getElementById('tickerSelect').value;
+            const date = document.getElementById('dateSelect').value;
+
+            if (!ticker) {
+                showError('Please select a ticker');
+                return;
+            }
+
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('statsSection').style.display = 'none';
+            document.getElementById('chartsSection').style.display = 'none';
+            document.getElementById('resultsCard').style.display = 'none';
+            document.getElementById('errorMessage').style.display = 'none';
+
+            try {
+                const url = `/stock-all-models?ticker=${ticker}&market_state=${dataType}${date ? `&date=${date}` : ''}`;
+                const response = await fetch(url);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                console.log("Received data:", data);
+
+                if (data.status === 'success') {
+                    // Update file info if available
+                    if (data.file_used) {
+                        document.getElementById('fileInfo').textContent = `Dữ liệu đang sử dụng: ${data.file_used}`;
+                    }
+                    
+                    // Use statistics from API response
+                    const totalPredictions = data.overall_statistics.total_predictions;
+                    const averageF1Score = data.overall_statistics.average_f1_score;
+
+                    // Update statistics
+                    document.getElementById('totalPredictions').textContent = totalPredictions;
+                    document.getElementById('averageF1Score').textContent = averageF1Score.toFixed(2) + '%';
+                    
+                    // Calculate up prediction percentage
+                    const upPredictions = data.data.filter(row => row.Prediction === 1).length;
+                    const upPercentage = (upPredictions / totalPredictions) * 100;
+                    document.getElementById('upPredictionPercentage').textContent = upPercentage.toFixed(1) + '%';
+                    
+                    document.getElementById('statsSection').style.display = 'flex';
+                    document.getElementById('chartsSection').style.display = 'flex';
+                    document.getElementById('resultsCard').style.display = 'block';
+
+                    // Update table
+                    dataTable.clear();
+                    data.data.forEach(row => {
+                        const predictionClass = row.Prediction === 1 ? 'prediction-up' : 'prediction-down';
+                        const predictionIcon = row.Prediction === 1 ? 
+                            '<i class="fas fa-arrow-up text-success"></i>' : 
+                            '<i class="fas fa-arrow-down text-danger"></i>';
+                        
+                        dataTable.row.add([
+                            row.Ticker,
+                            row.Model,
+                            row.Full_Date,
+                            `<span class="${predictionClass}">${predictionIcon} ${row.Prediction}</span>`,
+                            parseFloat(row.Confidence).toFixed(4),
+                            parseFloat(row.F1_Score).toFixed(4)
+                        ]);
+                    });
+                    dataTable.draw();
+                    
+                    // Update charts
+                    updateCharts(data.data);
+                } else {
+                    throw new Error(data.message || 'Failed to fetch data');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showError(`Error fetching prediction data: ${error.message}`);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+        
+        function updateCharts(data) {
+            // Sort data by date
+            data.sort((a, b) => new Date(a.Full_Date) - new Date(b.Full_Date));
+            
+            // Prepare data for trend chart
+            const dates = data.map(item => item.Full_Date);
+            const predictions = data.map(item => item.Prediction);
+            const confidences = data.map(item => parseFloat(item.Confidence).toFixed(2));
+            
+            predictionTrendChart.updateOptions({
+                xaxis: {
+                    categories: dates
+                }
+            });
+            
+            predictionTrendChart.updateSeries([
+                {
+                    name: 'Prediction',
+                    data: predictions
+                },
+                {
+                    name: 'Confidence',
+                    data: confidences
+                }
+            ]);
+            
+            // Prepare data for distribution chart
+            const upCount = data.filter(item => item.Prediction === 1).length;
+            const downCount = data.filter(item => item.Prediction === 0).length;
+            const total = data.length;
+            
+            const upPercentage = (upCount / total) * 100;
+            const downPercentage = (downCount / total) * 100;
+            
+            predictionDistributionChart.updateSeries([upPercentage, downPercentage]);
+        }
+    </script>
+</body>
+</html> 

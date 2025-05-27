@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+PNJ,lstm,test,0.525,0.0,0.0,0.0
+PNJ,svm,test,0.45,0.42105263157894735,0.42105263157894735,0.42105263157894735
+PNJ,transformer,test,0.525,0.0,0.0,0.0
+PNJ,logistic_regression,test,0.35,0.3157894736842105,0.3157894736842105,0.3157894736842105

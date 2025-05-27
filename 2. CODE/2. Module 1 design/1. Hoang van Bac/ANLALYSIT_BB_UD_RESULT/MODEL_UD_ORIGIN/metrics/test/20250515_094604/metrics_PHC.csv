@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+PHC,lstm,test,0.55,0.375,0.1875,0.25
+PHC,svm,test,0.4,0.4,1.0,0.5714285714285714
+PHC,transformer,test,0.6,0.0,0.0,0.0
+PHC,logistic_regression,test,0.375,0.2857142857142857,0.375,0.32432432432432434

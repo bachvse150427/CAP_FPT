@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+GAS,logistic_regression,test,0.0,0.0,0.0,0.0
+GAS,lstm,test,0.0,0.0,0.0,0.0
+GAS,svm,test,1.0,1.0,1.0,1.0
+GAS,transformer,test,0.0,0.0,0.0,0.0

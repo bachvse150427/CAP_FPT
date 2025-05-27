@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VC5,lstm,test,0.775,0.775,1.0,0.8732394366197183
+VC5,svm,test,0.775,0.775,1.0,0.8732394366197183
+VC5,transformer,test,0.775,0.775,1.0,0.8732394366197183
+VC5,logistic_regression,test,0.775,0.775,1.0,0.8732394366197183

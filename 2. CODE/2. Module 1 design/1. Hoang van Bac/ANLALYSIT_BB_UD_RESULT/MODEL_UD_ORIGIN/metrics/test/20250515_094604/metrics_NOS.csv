@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+NOS,lstm,test,0.375,0.0,0.0,0.0
+NOS,svm,test,0.625,0.625,1.0,0.7692307692307693
+NOS,transformer,test,0.375,0.0,0.0,0.0
+NOS,logistic_regression,test,0.625,0.6785714285714286,0.76,0.7169811320754716

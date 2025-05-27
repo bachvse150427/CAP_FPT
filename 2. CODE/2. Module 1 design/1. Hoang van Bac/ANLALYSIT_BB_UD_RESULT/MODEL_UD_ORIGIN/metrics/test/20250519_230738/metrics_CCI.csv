@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+CCI,lstm,test,0.38636363636363635,0.0,0.0,0.0
+CCI,svm,test,0.6136363636363636,0.6136363636363636,1.0,0.7605633802816901
+CCI,transformer,test,0.38636363636363635,0.0,0.0,0.0
+CCI,logistic_regression,test,0.36363636363636365,0.0,0.0,0.0

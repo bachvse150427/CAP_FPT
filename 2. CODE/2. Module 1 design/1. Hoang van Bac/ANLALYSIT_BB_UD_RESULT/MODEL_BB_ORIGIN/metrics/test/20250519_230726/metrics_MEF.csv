@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+MEF,logistic_regression,test,1.0,1.0,1.0,1.0
+MEF,lstm,test,1.0,1.0,1.0,1.0
+MEF,svm,test,1.0,1.0,1.0,1.0
+MEF,transformer,test,1.0,1.0,1.0,1.0

@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+PJC,lstm,test,0.4,0.4666666666666667,0.30434782608695654,0.3684210526315789
+PJC,svm,test,0.575,0.575,1.0,0.7301587301587301
+PJC,transformer,test,0.425,0.0,0.0,0.0
+PJC,logistic_regression,test,0.5,0.6,0.391304347826087,0.47368421052631576

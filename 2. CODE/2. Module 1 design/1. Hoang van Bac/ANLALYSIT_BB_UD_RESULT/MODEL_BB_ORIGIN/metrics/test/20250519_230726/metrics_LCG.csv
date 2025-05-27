@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+LCG,logistic_regression,test,1.0,1.0,1.0,1.0
+LCG,lstm,test,0.8275862068965517,1.0,0.8275862068965517,0.9056603773584906
+LCG,svm,test,1.0,1.0,1.0,1.0
+LCG,transformer,test,1.0,1.0,1.0,1.0

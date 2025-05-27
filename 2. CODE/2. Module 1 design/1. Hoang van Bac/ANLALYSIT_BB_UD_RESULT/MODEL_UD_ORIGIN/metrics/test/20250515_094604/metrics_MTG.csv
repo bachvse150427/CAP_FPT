@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+MTG,lstm,test,0.275,0.0,0.0,0.0
+MTG,svm,test,0.725,0.725,1.0,0.8405797101449275
+MTG,transformer,test,0.55,0.72,0.6206896551724138,0.6666666666666666
+MTG,logistic_regression,test,0.275,0.0,0.0,0.0

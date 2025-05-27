@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+TVD,lstm,test,0.575,0.0,0.0,0.0
+TVD,svm,test,0.425,0.425,1.0,0.5964912280701754
+TVD,transformer,test,0.575,0.0,0.0,0.0
+TVD,logistic_regression,test,0.5,0.2,0.058823529411764705,0.09090909090909091

@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+BVN,logistic_regression,test,0.0,0.0,0.0,0.0
+BVN,lstm,test,1.0,1.0,1.0,1.0
+BVN,svm,test,0.0,0.0,0.0,0.0
+BVN,transformer,test,0.0,0.0,0.0,0.0

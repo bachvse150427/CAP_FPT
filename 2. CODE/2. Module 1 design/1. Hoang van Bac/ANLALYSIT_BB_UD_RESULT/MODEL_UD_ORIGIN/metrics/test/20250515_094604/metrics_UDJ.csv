@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+UDJ,lstm,test,0.375,0.0,0.0,0.0
+UDJ,svm,test,0.625,0.625,1.0,0.7692307692307693
+UDJ,transformer,test,0.775,0.7352941176470589,1.0,0.847457627118644
+UDJ,logistic_regression,test,0.475,1.0,0.16,0.27586206896551724

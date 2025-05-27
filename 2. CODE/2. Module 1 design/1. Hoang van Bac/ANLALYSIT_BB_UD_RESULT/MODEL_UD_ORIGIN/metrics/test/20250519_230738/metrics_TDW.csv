@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+TDW,lstm,test,0.25,0.0,0.0,0.0
+TDW,svm,test,0.75,0.75,1.0,0.8571428571428571
+TDW,transformer,test,0.25,0.0,0.0,0.0
+TDW,logistic_regression,test,0.25,0.0,0.0,0.0

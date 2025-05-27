@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+NAV,lstm,test,0.5,0.5333333333333333,0.7272727272727273,0.6153846153846154
+NAV,svm,test,0.55,0.55,1.0,0.7096774193548387
+NAV,transformer,test,0.425,0.0,0.0,0.0
+NAV,logistic_regression,test,0.45,0.5,0.45454545454545453,0.47619047619047616

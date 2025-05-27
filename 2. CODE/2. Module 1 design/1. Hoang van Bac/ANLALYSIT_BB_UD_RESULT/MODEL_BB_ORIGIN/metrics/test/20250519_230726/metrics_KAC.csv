@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+KAC,logistic_regression,test,1.0,1.0,1.0,1.0
+KAC,lstm,test,0.896551724137931,1.0,0.896551724137931,0.9454545454545454
+KAC,svm,test,1.0,1.0,1.0,1.0
+KAC,transformer,test,1.0,1.0,1.0,1.0

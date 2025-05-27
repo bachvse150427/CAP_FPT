@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+HAI,lstm,test,0.022727272727272728,0.0,0.0,0.0
+HAI,svm,test,0.022727272727272728,0.0,0.0,0.0
+HAI,transformer,test,0.022727272727272728,0.0,0.0,0.0
+HAI,logistic_regression,test,0.022727272727272728,0.0,0.0,0.0

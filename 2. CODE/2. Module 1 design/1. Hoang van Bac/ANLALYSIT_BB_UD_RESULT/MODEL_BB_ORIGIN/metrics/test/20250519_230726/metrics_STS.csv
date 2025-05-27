@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+STS,logistic_regression,test,1.0,1.0,1.0,1.0
+STS,lstm,test,1.0,1.0,1.0,1.0
+STS,svm,test,1.0,1.0,1.0,1.0
+STS,transformer,test,1.0,1.0,1.0,1.0

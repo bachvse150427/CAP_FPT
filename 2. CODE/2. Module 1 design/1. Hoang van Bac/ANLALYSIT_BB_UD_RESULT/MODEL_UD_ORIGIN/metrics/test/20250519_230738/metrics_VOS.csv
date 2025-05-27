@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VOS,lstm,test,0.45454545454545453,0.46875,0.6818181818181818,0.5555555555555556
+VOS,svm,test,0.5,0.0,0.0,0.0
+VOS,transformer,test,0.5,0.5,1.0,0.6666666666666666
+VOS,logistic_regression,test,0.5,0.0,0.0,0.0

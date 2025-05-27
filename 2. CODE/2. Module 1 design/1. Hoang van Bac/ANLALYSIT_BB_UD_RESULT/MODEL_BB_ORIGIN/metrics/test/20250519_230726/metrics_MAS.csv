@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+MAS,logistic_regression,test,1.0,1.0,1.0,1.0
+MAS,lstm,test,1.0,1.0,1.0,1.0
+MAS,svm,test,1.0,1.0,1.0,1.0
+MAS,transformer,test,1.0,1.0,1.0,1.0

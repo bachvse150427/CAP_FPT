@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+VST,lstm,test,0.4,0.0,0.0,0.0
+VST,svm,test,0.6,0.6,1.0,0.75
+VST,transformer,test,0.4,0.0,0.0,0.0
+VST,logistic_regression,test,0.4,0.0,0.0,0.0

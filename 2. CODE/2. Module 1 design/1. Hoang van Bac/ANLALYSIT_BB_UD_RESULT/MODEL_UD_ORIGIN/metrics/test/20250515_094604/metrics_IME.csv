@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+IME,lstm,test,0.95,0.95,1.0,0.9743589743589743
+IME,svm,test,0.95,0.95,1.0,0.9743589743589743
+IME,transformer,test,0.95,0.95,1.0,0.9743589743589743
+IME,logistic_regression,test,0.65,0.9615384615384616,0.6578947368421053,0.78125

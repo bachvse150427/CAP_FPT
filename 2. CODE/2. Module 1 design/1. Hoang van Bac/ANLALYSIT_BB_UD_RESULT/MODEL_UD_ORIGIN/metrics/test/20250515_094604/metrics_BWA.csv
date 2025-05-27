@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+BWA,lstm,test,0.075,0.0,0.0,0.0
+BWA,svm,test,0.125,1.0,0.05405405405405406,0.10256410256410256
+BWA,transformer,test,0.075,0.0,0.0,0.0
+BWA,logistic_regression,test,0.75,0.9655172413793104,0.7567567567567568,0.8484848484848485

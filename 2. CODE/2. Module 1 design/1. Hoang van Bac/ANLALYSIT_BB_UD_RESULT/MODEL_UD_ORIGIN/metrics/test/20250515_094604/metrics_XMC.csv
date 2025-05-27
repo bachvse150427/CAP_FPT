@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+XMC,lstm,test,0.525,0.5128205128205128,1.0,0.6779661016949152
+XMC,svm,test,0.525,0.5217391304347826,0.6,0.5581395348837209
+XMC,transformer,test,0.525,0.5128205128205128,1.0,0.6779661016949152
+XMC,logistic_regression,test,0.5,0.5,0.5,0.5

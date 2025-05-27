@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+CHP,lstm,test,0.6,0.6,1.0,0.75
+CHP,svm,test,0.6,0.6,1.0,0.75
+CHP,transformer,test,0.55,0.6153846153846154,0.6666666666666666,0.64
+CHP,logistic_regression,test,0.575,0.5897435897435898,0.9583333333333334,0.7301587301587301

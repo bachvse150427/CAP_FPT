@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+HLA,lstm,test,0.975,0.975,1.0,0.9873417721518988
+HLA,svm,test,0.975,0.975,1.0,0.9873417721518988
+HLA,transformer,test,0.975,0.975,1.0,0.9873417721518988
+HLA,logistic_regression,test,0.475,1.0,0.46153846153846156,0.631578947368421

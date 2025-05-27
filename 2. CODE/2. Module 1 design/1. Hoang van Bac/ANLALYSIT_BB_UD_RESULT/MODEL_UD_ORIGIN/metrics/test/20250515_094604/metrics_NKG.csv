@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+NKG,lstm,test,0.4,0.4,1.0,0.5714285714285714
+NKG,svm,test,0.45,0.4,0.75,0.5217391304347826
+NKG,transformer,test,0.4,0.4,1.0,0.5714285714285714
+NKG,logistic_regression,test,0.4,0.4,1.0,0.5714285714285714

@@ -1,0 +1,7 @@
+venv
+.env
+dist
+build
+logs
+Get_Data
+

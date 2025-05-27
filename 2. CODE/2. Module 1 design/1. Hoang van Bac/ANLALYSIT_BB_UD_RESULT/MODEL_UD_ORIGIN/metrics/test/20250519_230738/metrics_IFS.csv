@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+IFS,lstm,test,0.5227272727272727,0.0,0.0,0.0
+IFS,svm,test,0.5227272727272727,0.0,0.0,0.0
+IFS,transformer,test,0.5227272727272727,0.0,0.0,0.0
+IFS,logistic_regression,test,0.5227272727272727,0.0,0.0,0.0

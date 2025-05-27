@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+GIL,lstm,test,0.55,0.0,0.0,0.0
+GIL,svm,test,0.55,0.5,0.7777777777777778,0.6086956521739131
+GIL,transformer,test,0.55,0.0,0.0,0.0
+GIL,logistic_regression,test,0.475,0.36363636363636365,0.2222222222222222,0.27586206896551724

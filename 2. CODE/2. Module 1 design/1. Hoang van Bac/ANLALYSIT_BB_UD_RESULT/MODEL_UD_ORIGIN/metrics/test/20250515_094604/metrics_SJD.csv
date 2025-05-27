@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+SJD,lstm,test,0.4,0.0,0.0,0.0
+SJD,svm,test,0.4,0.0,0.0,0.0
+SJD,transformer,test,0.45,1.0,0.08333333333333333,0.15384615384615385
+SJD,logistic_regression,test,0.4,0.5,0.20833333333333334,0.29411764705882354

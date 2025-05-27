@@ -1,0 +1,5 @@
+Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
+CTB,logistic_regression,test,1.0,1.0,1.0,1.0
+CTB,lstm,test,1.0,1.0,1.0,1.0
+CTB,svm,test,1.0,1.0,1.0,1.0
+CTB,transformer,test,1.0,1.0,1.0,1.0

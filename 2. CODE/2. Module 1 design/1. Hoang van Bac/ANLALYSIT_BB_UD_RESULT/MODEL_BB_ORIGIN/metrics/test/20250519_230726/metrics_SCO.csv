@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-SCO,logistic_regression,test,0.0,0.0,0.0,0.0
-SCO,lstm,test,0.0,0.0,0.0,0.0
-SCO,transformer,test,0.0,0.0,0.0,0.0
-SCO,svm,test,0.0,0.0,0.0,0.0

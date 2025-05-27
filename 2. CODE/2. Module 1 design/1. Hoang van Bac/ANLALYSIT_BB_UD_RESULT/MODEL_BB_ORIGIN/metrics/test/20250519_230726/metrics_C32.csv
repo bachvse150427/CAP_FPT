@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-C32,logistic_regression,test,1.0,1.0,1.0,1.0
-C32,lstm,test,0.0,0.0,0.0,0.0
-C32,transformer,test,1.0,1.0,1.0,1.0
-C32,svm,test,1.0,1.0,1.0,1.0

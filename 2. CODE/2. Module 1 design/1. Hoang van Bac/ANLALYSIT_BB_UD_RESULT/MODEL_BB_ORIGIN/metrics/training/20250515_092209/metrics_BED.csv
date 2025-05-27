@@ -1,9 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-BED,logistic_regression,train,0.9659090909090909,0.9680851063829787,0.9659090909090909,0.9658694246929541
-BED,logistic_regression,valid,1.0,1.0,1.0,1.0
-BED,lstm,train,1.0,1.0,1.0,1.0
-BED,lstm,valid,1.0,1.0,1.0,1.0
-BED,svm,train,0.9659090909090909,0.9680851063829787,0.9659090909090909,0.9658694246929541
-BED,svm,valid,1.0,1.0,1.0,1.0
-BED,transformer,train,1.0,1.0,1.0,1.0
-BED,transformer,valid,1.0,1.0,1.0,1.0

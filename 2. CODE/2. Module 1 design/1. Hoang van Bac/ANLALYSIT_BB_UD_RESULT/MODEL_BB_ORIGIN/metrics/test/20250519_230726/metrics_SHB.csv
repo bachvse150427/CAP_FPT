@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-SHB,logistic_regression,test,0.0,0.0,0.0,0.0
-SHB,lstm,test,0.0,0.0,0.0,0.0
-SHB,svm,test,1.0,1.0,1.0,1.0
-SHB,transformer,test,0.0,0.0,0.0,0.0

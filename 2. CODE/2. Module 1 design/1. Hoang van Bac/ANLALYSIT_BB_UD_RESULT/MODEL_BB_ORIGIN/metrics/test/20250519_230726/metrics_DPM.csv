@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-DPM,logistic_regression,test,0.0,0.0,0.0,0.0
-DPM,lstm,test,0.0,0.0,0.0,0.0
-DPM,svm,test,0.0,0.0,0.0,0.0
-DPM,transformer,test,0.0,0.0,0.0,0.0

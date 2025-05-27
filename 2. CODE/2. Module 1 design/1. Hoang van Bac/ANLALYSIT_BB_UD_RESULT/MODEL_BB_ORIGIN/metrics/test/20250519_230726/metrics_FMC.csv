@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-FMC,logistic_regression,test,0.3103448275862069,1.0,0.3103448275862069,0.47368421052631576
-FMC,lstm,test,0.0,0.0,0.0,0.0
-FMC,svm,test,0.0,0.0,0.0,0.0
-FMC,transformer,test,0.0,0.0,0.0,0.0

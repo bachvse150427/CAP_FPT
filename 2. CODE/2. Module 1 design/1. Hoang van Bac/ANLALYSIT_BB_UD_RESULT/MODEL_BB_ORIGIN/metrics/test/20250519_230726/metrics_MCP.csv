@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-MCP,logistic_regression,test,1.0,1.0,1.0,1.0
-MCP,lstm,test,1.0,1.0,1.0,1.0
-MCP,svm,test,1.0,1.0,1.0,1.0
-MCP,transformer,test,1.0,1.0,1.0,1.0

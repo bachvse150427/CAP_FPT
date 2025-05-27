@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-DMC,logistic_regression,test,0.9655172413793104,1.0,0.9655172413793104,0.9824561403508771
-DMC,lstm,test,1.0,1.0,1.0,1.0
-DMC,svm,test,0.10344827586206896,1.0,0.10344827586206896,0.1875
-DMC,transformer,test,1.0,1.0,1.0,1.0

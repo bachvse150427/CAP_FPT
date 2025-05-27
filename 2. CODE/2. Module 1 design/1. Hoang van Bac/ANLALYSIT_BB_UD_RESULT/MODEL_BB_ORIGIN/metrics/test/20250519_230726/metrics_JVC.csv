@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-JVC,logistic_regression,test,1.0,1.0,1.0,1.0
-JVC,lstm,test,1.0,1.0,1.0,1.0
-JVC,svm,test,0.7931034482758621,1.0,0.7931034482758621,0.8846153846153846
-JVC,transformer,test,1.0,1.0,1.0,1.0

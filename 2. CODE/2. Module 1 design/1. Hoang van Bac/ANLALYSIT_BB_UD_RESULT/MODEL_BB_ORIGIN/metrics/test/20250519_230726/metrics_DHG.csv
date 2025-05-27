@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-DHG,logistic_regression,test,1.0,1.0,1.0,1.0
-DHG,lstm,test,0.8620689655172413,1.0,0.8620689655172413,0.9259259259259259
-DHG,svm,test,0.8275862068965517,1.0,0.8275862068965517,0.9056603773584906
-DHG,transformer,test,1.0,1.0,1.0,1.0

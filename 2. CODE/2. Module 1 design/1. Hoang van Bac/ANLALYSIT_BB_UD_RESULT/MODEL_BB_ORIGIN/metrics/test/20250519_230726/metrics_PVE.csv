@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-PVE,logistic_regression,test,1.0,1.0,1.0,1.0
-PVE,lstm,test,1.0,1.0,1.0,1.0
-PVE,svm,test,1.0,1.0,1.0,1.0
-PVE,transformer,test,1.0,1.0,1.0,1.0

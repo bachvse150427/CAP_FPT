@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-ECI,lstm,test,1.0,1.0,1.0,1.0
-ECI,svm,test,1.0,1.0,1.0,1.0
-ECI,transformer,test,1.0,1.0,1.0,1.0
-ECI,logistic_regression,test,1.0,1.0,1.0,1.0

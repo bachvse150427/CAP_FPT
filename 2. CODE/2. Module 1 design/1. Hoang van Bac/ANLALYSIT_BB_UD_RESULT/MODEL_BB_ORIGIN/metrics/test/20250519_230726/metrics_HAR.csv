@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-HAR,logistic_regression,test,1.0,1.0,1.0,1.0
-HAR,lstm,test,0.4827586206896552,1.0,0.4827586206896552,0.6511627906976745
-HAR,svm,test,1.0,1.0,1.0,1.0
-HAR,transformer,test,1.0,1.0,1.0,1.0

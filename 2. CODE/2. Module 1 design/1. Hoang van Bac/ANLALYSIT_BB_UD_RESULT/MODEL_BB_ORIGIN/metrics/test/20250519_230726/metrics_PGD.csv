@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-PGD,logistic_regression,test,0.9655172413793104,1.0,0.9655172413793104,0.9824561403508771
-PGD,lstm,test,1.0,1.0,1.0,1.0
-PGD,svm,test,1.0,1.0,1.0,1.0
-PGD,transformer,test,0.7931034482758621,1.0,0.7931034482758621,0.8846153846153846

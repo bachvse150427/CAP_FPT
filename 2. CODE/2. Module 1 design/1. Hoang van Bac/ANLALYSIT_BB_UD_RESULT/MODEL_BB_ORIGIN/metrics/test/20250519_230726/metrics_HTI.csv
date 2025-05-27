@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-HTI,logistic_regression,test,1.0,1.0,1.0,1.0
-HTI,lstm,test,1.0,1.0,1.0,1.0
-HTI,svm,test,0.0,0.0,0.0,0.0
-HTI,transformer,test,1.0,1.0,1.0,1.0

@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-BDB,logistic_regression,test,0.0,0.0,0.0,0.0
-BDB,lstm,test,0.0,0.0,0.0,0.0
-BDB,svm,test,0.0,0.0,0.0,0.0
-BDB,transformer,test,0.13793103448275862,1.0,0.13793103448275862,0.24242424242424243

@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-AME,logistic_regression,test,0.1724137931034483,1.0,0.1724137931034483,0.29411764705882354
-AME,lstm,test,0.0,0.0,0.0,0.0
-AME,svm,test,0.0,0.0,0.0,0.0
-AME,transformer,test,0.1724137931034483,1.0,0.1724137931034483,0.29411764705882354

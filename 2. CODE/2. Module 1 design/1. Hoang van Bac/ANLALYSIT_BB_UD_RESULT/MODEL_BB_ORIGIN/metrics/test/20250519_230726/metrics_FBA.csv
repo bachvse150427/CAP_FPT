@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-FBA,logistic_regression,test,1.0,1.0,1.0,1.0
-FBA,lstm,test,1.0,1.0,1.0,1.0
-FBA,svm,test,1.0,1.0,1.0,1.0
-FBA,transformer,test,1.0,1.0,1.0,1.0

@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-PDN,lstm,train,1.0,1.0,1.0,1.0
-PDN,lstm,valid,1.0,1.0,1.0,1.0
-PDN,transformer,train,1.0,1.0,1.0,1.0
-PDN,transformer,valid,1.0,1.0,1.0,1.0

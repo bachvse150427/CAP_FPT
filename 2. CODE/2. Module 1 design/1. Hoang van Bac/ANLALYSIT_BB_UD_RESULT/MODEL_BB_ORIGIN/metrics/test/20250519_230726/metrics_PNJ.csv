@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-PNJ,logistic_regression,test,0.0,0.0,0.0,0.0
-PNJ,lstm,test,0.7931034482758621,1.0,0.7931034482758621,0.8846153846153846
-PNJ,svm,test,0.0,0.0,0.0,0.0
-PNJ,transformer,test,0.0,0.0,0.0,0.0

@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-TGP,logistic_regression,test,1.0,1.0,1.0,1.0
-TGP,lstm,test,1.0,1.0,1.0,1.0
-TGP,svm,test,1.0,1.0,1.0,1.0
-TGP,transformer,test,0.896551724137931,1.0,0.896551724137931,0.9454545454545454

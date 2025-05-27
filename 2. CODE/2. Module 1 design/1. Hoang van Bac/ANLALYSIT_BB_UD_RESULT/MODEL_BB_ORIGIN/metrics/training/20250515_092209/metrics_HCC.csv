@@ -1,9 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-HCC,logistic_regression,train,1.0,1.0,1.0,1.0
-HCC,logistic_regression,valid,1.0,1.0,1.0,1.0
-HCC,lstm,train,0.9833333333333333,0.9838709677419355,0.9833333333333333,0.9833287024173383
-HCC,lstm,valid,1.0,1.0,1.0,1.0
-HCC,svm,train,1.0,1.0,1.0,1.0
-HCC,svm,valid,0.9032258064516129,1.0,0.9032258064516129,0.9491525423728814
-HCC,transformer,train,0.9666666666666667,0.96875,0.9666666666666667,0.9666295884315907
-HCC,transformer,valid,1.0,1.0,1.0,1.0

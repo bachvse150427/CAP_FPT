@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-IME,logistic_regression,test,0.0,0.0,0.0,0.0
-IME,lstm,test,0.0,0.0,0.0,0.0
-IME,svm,test,0.0,0.0,0.0,0.0
-IME,transformer,test,0.0,0.0,0.0,0.0

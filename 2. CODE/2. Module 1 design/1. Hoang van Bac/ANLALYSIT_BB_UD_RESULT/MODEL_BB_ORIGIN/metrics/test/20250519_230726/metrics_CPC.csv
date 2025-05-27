@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-CPC,logistic_regression,test,0.0,0.0,0.0,0.0
-CPC,lstm,test,0.0,0.0,0.0,0.0
-CPC,svm,test,0.0,0.0,0.0,0.0
-CPC,transformer,test,1.0,1.0,1.0,1.0

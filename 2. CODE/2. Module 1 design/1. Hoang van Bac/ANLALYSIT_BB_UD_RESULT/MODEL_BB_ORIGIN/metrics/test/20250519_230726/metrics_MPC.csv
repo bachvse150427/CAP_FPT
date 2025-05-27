@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-MPC,logistic_regression,test,1.0,1.0,1.0,1.0
-MPC,lstm,test,1.0,1.0,1.0,1.0
-MPC,svm,test,1.0,1.0,1.0,1.0
-MPC,transformer,test,1.0,1.0,1.0,1.0

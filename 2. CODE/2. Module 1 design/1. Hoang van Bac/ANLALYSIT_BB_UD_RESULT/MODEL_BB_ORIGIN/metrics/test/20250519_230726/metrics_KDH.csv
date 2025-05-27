@@ -1,5 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-KDH,logistic_regression,test,1.0,1.0,1.0,1.0
-KDH,lstm,test,0.13793103448275862,1.0,0.13793103448275862,0.24242424242424243
-KDH,svm,test,1.0,1.0,1.0,1.0
-KDH,transformer,test,1.0,1.0,1.0,1.0

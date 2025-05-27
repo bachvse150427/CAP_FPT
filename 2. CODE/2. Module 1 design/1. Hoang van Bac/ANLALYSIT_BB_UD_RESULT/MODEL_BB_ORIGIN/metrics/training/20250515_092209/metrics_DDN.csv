@@ -1,9 +1,0 @@
-Ticker,Model,Dataset,Accuracy,Precision,Recall,F1
-DDN,logistic_regression,train,0.9711538461538461,0.9727272727272727,0.9711538461538461,0.9711298232627001
-DDN,logistic_regression,valid,1.0,1.0,1.0,1.0
-DDN,lstm,train,1.0,1.0,1.0,1.0
-DDN,lstm,valid,1.0,1.0,1.0,1.0
-DDN,svm,train,0.9615384615384616,0.9642857142857142,0.9615384615384616,0.9614814814814814
-DDN,svm,valid,1.0,1.0,1.0,1.0
-DDN,transformer,train,1.0,1.0,1.0,1.0
-DDN,transformer,valid,1.0,1.0,1.0,1.0
